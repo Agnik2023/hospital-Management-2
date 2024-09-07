@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPD Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>OPD Booking</h1>
+    <label for="abha-id">Enter ABHA ID:</label>
+    <input type="text" id="abha-id">
+    <button onclick="fetchPatientDetails()">Fetch Details</button>
+
+    <div id="patient-info"></div>
+    <button id="book-doctor" onclick="showDoctorOptions()" style="display:none;">Book Doctor</button>
+
+    <div id="doctor-options" style="display:none;"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
